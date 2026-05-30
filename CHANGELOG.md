@@ -1,5 +1,41 @@
 # Changelog
 
+## v1.2.0 — Troubleshooting Consolidation & Error Message Templates
+
+### 改进 (Improvements)
+
+- **合并 Troubleshooting & FAQ**
+  - 将分散在文件末尾的 FAQ 和中间的 Error Handling 合并为统一的 `## Troubleshooting & FAQ` 章节
+  - 新增 `Generation Problems` 子章节，集中处理生成阶段的错误检测与修复
+  - 解决"反模式指引分散在各处，找起来不方便"的痛点
+
+- **增加系统错误提示文案模板**
+  - Phase 1 一致性检查：增加具体的 `⚠️ 信息确认` 消息格式
+  - Phase 2 兜底策略：增加 `✅ 帮你拍板` 消息模板，明确告知用户系统做了什么选择
+  - Phase 3 异常处理：用表格形式固化 4 种常见异常的系统回复文案
+  - Phase 4 生成错误：新增 5 类生成错误的检测规则、自动修复策略和明确的用户提示消息
+
+- **主动安抚英文提示词焦虑**
+  - 在 Phase 4 输出前增加主动说明："英文提示词会自动翻译好，你不需要理解每个单词"
+  - FAQ 增加 Q&A："我看不懂英文提示词怎么办？"
+
+- **优化文档结构**
+  - 删除独立的 `## Error Handling` 和 `## FAQ` 章节
+  - 所有问题处理内容集中在 Critical Rules 之后的 Troubleshooting 区域
+  - 文档结构更紧凑，从 259 行优化到 301 行（内容增加但结构更清晰）
+
+### 影响评估
+
+| 评测维度 | 优化前 | 优化目标 |
+|---------|-------|---------|
+| Reliability 可靠性 | 4.2 | 4.4 |
+| 异常处理 | 4.0 | 4.3 |
+| 国内适配性 | 4.3 | 4.5 |
+| Convention 规范性 | 4.7 | 4.8 |
+| 反模式与FAQ | 4.3 | 4.6 |
+
+---
+
 ## v1.1.0 — Reliability & Usability Update
 
 ### 改进 (Improvements)
